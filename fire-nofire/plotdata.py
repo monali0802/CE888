@@ -28,11 +28,11 @@ def plot_training(result, type_model, layers_len):
                markersize='10', color='red')
     ax[0].plot(np.arange(1, epochs+1), result.history['val_loss'], label='Validation_loss', linewidth=2.5, marker='x',
                linestyle='--', markersize='10', color='blue')
-    ax[0].title('Training and validation loss')
+    # ax[0].title('Training and validation loss')
     ax[0].grid(True)
     ax[0].legend(prop={'size': 14, 'weight': 'bold'})
     ax[0].tick_params(axis='both', which='major', labelsize=15)
-    ax[0].show()
+    # ax[0].show()
 
     plt.subplots_adjust(hspace=0.3)
 
@@ -43,11 +43,11 @@ def plot_training(result, type_model, layers_len):
                marker='o', markersize='10', color='red')
     ax[1].plot(np.arange(1, epochs+1), result.history['val_accuracy'], label='Validation_accuracy', linewidth=2.5,
                linestyle='--', marker='x', markersize='10', color='blue')
-    ax[1].title('Training and validation accuracy')
+    # ax[1].title('Training and validation accuracy')
     ax[1].grid(True)
     ax[1].legend(prop={'size': 14, 'weight': 'bold'}, loc='best')
     ax[1].tick_params(axis='both', which='major', labelsize=15)
-    ax[1].show()
+    # ax[1].show()
     file_figobj = 'Output/FigureObject/%s_%d_EPOCH_%d_layers_opt.fig.pickle' % (type_model, epochs, layers_len)
     file_pdf = 'Output/Figures/%s_%d_EPOCH_%d_layers_opt.pdf' % (type_model, epochs, layers_len)
 
