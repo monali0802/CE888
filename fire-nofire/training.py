@@ -101,16 +101,16 @@ def train_keras():
     loss = res_fire.history['loss']
     val_loss = res_fire.history['val_loss']
     epochss = range(len(accuracy))
-    # plt.plot(epochss, accuracy, 'bo', label='Training accuracy')
-    # plt.plot(epochss, val_accuracy, 'b', label='Validation accuracy')
-    # plt.title('Training and validation accuracy')
-    # plt.legend()
-    # plt.show()
-    # plt.plot(epochss, loss, 'bo', label='Training loss')
-    # plt.plot(epochss, val_loss, 'b', label='Validation loss')
-    # plt.title('Training and validation loss')
-    # plt.legend()
-    # plt.show()
+    plt.plot(epochss, accuracy, 'bo', label='Training accuracy')
+    plt.plot(epochss, val_accuracy, 'b', label='Validation accuracy')
+    plt.title('Training and validation accuracy')
+    plt.legend()
+    plt.show()
+    plt.plot(epochss, loss, 'bo', label='Training loss')
+    plt.plot(epochss, val_loss, 'b', label='Validation loss')
+    plt.title('Training and validation loss')
+    plt.legend()
+    plt.show()
 
     layers_len = len(model.layers)
 

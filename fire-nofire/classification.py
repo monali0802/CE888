@@ -30,4 +30,5 @@ def classify():
 
     model_fire = load_model('Output/Models/model_fire_resnet_weighted_40_no_metric_simple')
 
-    _ = model_fire.evaluate(test_ds, batch_size=batch_size)
+    res = model_fire.evaluate(test_ds, batch_size=batch_size)
+    print(res)
