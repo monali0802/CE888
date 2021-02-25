@@ -1,12 +1,12 @@
 Config file
-
+    
     For training
     Mode = Training
     
     For test
     Mode = Classification
     
-    Epochs = 50 (chnage from config file)
+    Epochs = 50 (change from config file)
 
 Dataset
 
