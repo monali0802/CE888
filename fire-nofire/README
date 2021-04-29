@@ -6,7 +6,7 @@ Config file
     For test
     Mode = Classification
     
-    Epochs = 50 (change from config file)
+    Epochs = 13 (change from config file)
 
 Dataset
 
